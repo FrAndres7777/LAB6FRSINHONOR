@@ -1,14 +1,10 @@
 <RCC>
     <qresource prefix="/">
-        <file>imagenes/space.png</file>
-        <file>imagenes/sol2.png</file>
-        <file>imagenes/final.jpg</file>
-        <file>imagenes/german.png</file>
-        <file>imagenes/uk.png</file>
-        <file>imagenes/usa.png</file>
-        <file>imagenes/_spain.png</file>
-        <file>imagenes/_uruguay.png</file>
-        <file>imagenes/blanco.jpg</file>
         <file>imagenes/fondo.png</file>
+        <file>imagenes/FR20.png</file>
+        <file>imagenes/FR19.png</file>
+        <file>imagenes/FR18.png</file>
+        <file>imagenes/FR17.png</file>
+        <file>imagenes/FRSol.png</file>
     </qresource>
 </RCC>

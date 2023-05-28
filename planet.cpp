@@ -8,6 +8,7 @@ Planet::Planet(QString name_)
 
 void Planet::Tamanio()
 {
+    //se pintara en en mainwindow.cpp
     setPixmap(QPixmap(name).scaled(radio*2,radio*2));
 }
 

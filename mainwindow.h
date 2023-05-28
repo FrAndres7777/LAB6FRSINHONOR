@@ -5,10 +5,10 @@
 #include <QGraphicsScene>
 #include "planet.h"
 #include <QList>
-#include <QMessageBox>
+
 #include <QTimer>
 #include <QDebug>
-#include <QFile>
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -41,7 +41,7 @@ private:
     int number;
     bool saveButton;
 
-    QString file_name;
+
 public slots:
     void mover();
 

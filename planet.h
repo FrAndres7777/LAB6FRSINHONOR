@@ -41,10 +41,12 @@ public:
     double getX_inicial() const;
     void setX_inicial(double value);
 
+
     double getY_inicial() const;
     void setY_inicial(double value);
 
 private:
+    double G;
     double x_inicial,y_inicial,posx,posy,masa,radio,velx,vely,ac_x=0,ac_y=0;
     QString name;
 };

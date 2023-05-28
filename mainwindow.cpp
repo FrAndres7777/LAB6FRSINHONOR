@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
     this->setMinimumSize(width(),height());
     this->setMaximumSize(width(),height());
     scene = new QGraphicsScene();
-    scene->setBackgroundBrush(QPixmap(":/imagenes/final.jpg").scaled(1000,1000));
+    scene->setBackgroundBrush(QPixmap(":/imagenes/fondo.png").scaled(1000,1000));
     ui->graphicsView->setScene(scene);
     ui->graphicsView->setFixedSize(1000,1000);
     ui->graphicsView->setSceneRect(0,0,1000,1000);
@@ -39,21 +39,19 @@ MainWindow::~MainWindow()
 
 void MainWindow::CreatePlanet()
 {
-    if(!planetName(":/imagenes/_uruguay.png")){
-        planets.push_back(new Planet(":/imagenes/_uruguay.png"));
+    if(!planetName(":/imagenes/FR17.png")){
+        planets.push_back(new Planet(":/imagenes/FR17.png"));
     }
-    else if(!planetName(":/imagenes/german.png")){
-        planets.push_back(new Planet(":/imagenes/german.png"));
+    else if(!planetName(":/imagenes/FR18.png")){
+        planets.push_back(new Planet(":/imagenes/FR18.png"));
     }
-    else if(!planetName(":/imagenes/_spain.png")){
-        planets.push_back(new Planet(":/imagenes/_spain.png"));
+    else if(!planetName(":/imagenes/FR19.png")){
+        planets.push_back(new Planet(":/imagenes/FR19.png"));
     }
-    else if(!planetName(":/imagenes/uk.png")){
-        planets.push_back(new Planet(":/imagenes/uk.png"));
+    else if(!planetName(":/imagenes/FR20.png")){
+        planets.push_back(new Planet(":/imagenes/FR20.png"));
     }
-    else if(!planetName(":/imagenes/usa.png")){
-        planets.push_back(new Planet(":/imagenes/usa.png"));
-    }
+
 }
 
 bool MainWindow::planetName(QString name)
@@ -66,7 +64,7 @@ bool MainWindow::planetName(QString name)
 
 void MainWindow::Sun()
 {
-    planets.push_back(new Planet(":/imagenes/sol2.png"));
+    planets.push_back(new Planet(":/imagenes/FRSol.png"));
     planets[0]->setMasa(70000/16);
     planets[0]->setRadio(300/10);
     planets[0]->setVelx(0);
@@ -118,8 +116,6 @@ void MainWindow::Aceleracion()
         qDebug() << "ac y " << acy;
         acx=0,acy=0;
    }
-
-
 
 
 }
@@ -247,8 +243,6 @@ void MainWindow::Invisible()
 }
 void MainWindow::on_play_clicked()
 {
-
-
 
 
     timer->start(10);
