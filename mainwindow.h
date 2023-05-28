@@ -44,18 +44,13 @@ private:
     QString file_name;
 public slots:
     void mover();
-    void Crear_archivo();
+
 
 private slots:
     void on_add_clicked();
     void on_save_clicked();
     void on_pushButton_3_clicked();
     void on_play_clicked();
-    void on_stop_clicked();
-    void on_view_clicked();
-    void on_next_clicked();
-    void on_back_clicked();
-    void on_delete__clicked();
-    void on_ok_clicked();
+
 };
 #endif // MAINWINDOW_H

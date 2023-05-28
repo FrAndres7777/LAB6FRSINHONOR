@@ -19,6 +19,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->graphicsView->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     ui->graphicsView->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     ui->graphicsView->setVisible(true);
+    Invisible();
     //escena entrada de datos
 
     //Sol
@@ -94,10 +95,7 @@ void MainWindow::mover()
     }
 }
 
-void MainWindow::Crear_archivo()
-{
 
-}
 
 void MainWindow::Aceleracion()
 {
@@ -257,34 +255,4 @@ void MainWindow::on_play_clicked()
     timer2->start(100);
 }
 
-void MainWindow::on_stop_clicked()
-{
-    timer->stop();
-    timer2->stop();
-}
 
-void MainWindow::on_view_clicked()
-{
-
-}
-
-void MainWindow::on_next_clicked()
-{
-
-}
-
-void MainWindow::on_back_clicked()
-{
-
-}
-
-void MainWindow::on_delete__clicked()
-{
-
-
-}
-
-void MainWindow::on_ok_clicked()
-{
-
-}
